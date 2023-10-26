@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+
+:root {
+    --color1: #782221;
+    --color2: #dbc2a4;
+    --color3: #2c1d27;
+    --color4: #eeeeeef8;
+    --color5: #131313;
+    --color6: #6d0000;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1160px;
+    color: var(--color4);
+    margin: 0 auto;
+}
+
+/* ********CSS PAGE FORME******** */
+
+.backgroud-clr {
+    background-color: var(--color1);
+    border-right: 1px solid var(--color5);
+}
+
+header {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .img__header img{
+    width: 150px;
+    height: 150px;
+    border: 1px transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #fff;
+    transition: .6s;
+}
+
+header .img__header img:hover {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#chargeur {
+    position: absolute;
+    top: 35px;
+    left: 450px;
+    transform: translate(50%, -50%);
+    width: 100px;
+    height: 50px;
+    background-color: var(--color4);
+    border-radius: 500px;
+    box-shadow: inset 1px 1px 20px 0 #00000027;
+}
+
+.cercle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.9);
+    background: linear-gradient(to bottom, #fff, #ecebeb);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 2px  #00000027,
+    inset 0.5px 0.5px 2px #00000027;
+    transition: .9s ease;
+}
+
+#chargeur.active .cercle {
+    left: 300px;
+    background: linear-gradient(to bottom, #fff, #ecebeb);
+    box-shadow: 1px 1px 10px 2px  #00000027,
+    inset 0.5px 0.5px 2px #00000027;
+}
+
+#chargeur.active {
+    background-color: var(--color5);
+    box-shadow: inset 1px 1px 20px 0px #000;
+}
+
+.backgroud-clr.active {
+    background-color: var(--color5);
+}
+
+
+/* ***********BLOC INFORMATION **************** */
+
+.bloc > div{
+    height: 80px;
+    background-color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+.bloc > div > p > a {
+    text-decoration: none;
+    color: var(--color4);
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.bloc > div > p > a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--color4);
+    border-radius: 3px;
+}
+
+/* ***********LEFT AND RIGHT************* */
+
+.left__and__right__doc {
+    display: flex;
+}
+
+/* ************LEFT DOC********** */
+
+#about {
+    width: 350px;
+    margin: 20px 0px 0px 20px;
+    /* background: var(--color3); */
+}
+
+#about .left__bloc__doc__about {
+    width: 310px;
+    margin-bottom: 30px;
+}
+
+#about .left__doc__title {
+    width: 100%;
+    height: 25px;
+    background: var(--color2);
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+}
+
+#about .left__doc__title h4 {
+    color: var(--color5);
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    text-align: start;
+    margin-left: 20px;
+}
+
+/* ******************AU DESSUS JOUE SUR TOUS DANS L'ID ABOUT*************** */
+
+#about .left__doc__p__about {
+    margin-top: 20px;
+    text-indent: 35px;
+    width: 290px;
+    font-size: .9rem;
+    word-break: break-all;
+}
+
+
+#about .left__doc__p__langage {
+    margin-top: 20px;
+    width: 290px;
+    margin-left: 20px;
+    font-size: .9rem;
+    word-break: break-all;
+}
+
+#about .left__doc__p__interest {
+    margin-top: 20px;
+    width: 290px;
+    margin-left: 20px;
+    font-size: .9rem;
+    word-break: break-all;
+}
+
+/* ******************DEBUT RIGHT DOC ********************** */
+
+
+#pro {
+    background: var(--color4);
+    width: 850px;
+    height: 920px;
+    color: var(--color5);
+}
+
+#pro .right__bloc__doc__pro {
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/* **********Expérience pro********** */
+
+#pro .right__doc__title {
+    height: 25px;
+    background: var(--color2);
+    border-left: 5px solid var(--color6);
+    display: flex;
+    align-items: center;
+    transition: .6s;
+}
+
+#pro .right__doc__title:hover {
+    border-right: 10px solid var(--color6);
+}
+
+
+
+#pro .right__doc__title h4 {
+    color: var(--color5);
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    text-align: start;
+    margin-left: 5px;
+}
+
+
+#pro .right__doc__p__pro {
+    margin-top: 20px;
+    font-size: .9rem;
+}
+
+#pro .right__doc__p__pro ul {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#pro .right__doc__p__pro .one {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#pro .right__doc__p__pro .one + p {
+    margin-bottom: 20px;
+}
+
+#pro .right__doc__p__pro .one + p + p {
+    margin-bottom: 20px;
+}
+
+
+/* **********FIN PRO********** */
+
+/* **********FOOTER********** */
+
+#footer {
+    margin-top: 15px;
+}
+
+#footer .footer__resaux__icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#footer .footer__resaux__icon i {
+    font-size: 40px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    transition: .9s;
+}
+
+#footer .footer__resaux__icon i:hover {
+    cursor: pointer;
+    font-size: 60px;
+    padding-left: 20px;
+    opacity: .5;
+}
+
+#footer .footer__resaux__maj {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#footer .footer__resaux__maj small {
+    font-size: .8rem;
+    opacity: .7;
+}
