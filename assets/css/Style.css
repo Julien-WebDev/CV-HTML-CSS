@@ -139,17 +139,15 @@ header h3 {
 #about .left__doc__p__langage {
     margin-top: 20px;
     width: 290px;
-    margin-left: 20px;
+    margin-left: -20px;
     font-size: .9rem;
-    word-break: break-all;
 }
 
 #about .left__doc__p__interest {
     margin-top: 20px;
     width: 290px;
-    margin-left: 20px;
+    margin-left: -20px;
     font-size: .9rem;
-    word-break: break-all;
 }
 
 /* ******************DEBUT RIGHT DOC ********************** */
